@@ -106,7 +106,7 @@ MIDDLEWARE_CLASSES = (
 import djcelery
 djcelery.setup_loader()
 
-BROKER_URL = URI.parse(ENV["REDISTOGO_URL"] || "redis://127.0.0.1:6379/" )
+BROKER_URL = "pub-redis-10710.us-east-1-1.2.ec2.garantiadata.com:10710"
 
 ROOT_URLCONF = 'pulse.urls'
 
